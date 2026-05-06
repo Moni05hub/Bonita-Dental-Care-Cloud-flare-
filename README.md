@@ -1,2 +1,3 @@
-# Bonita-Dental-Care-Cloud-flare-
-Implementing Cloudflare to this dental offices' website 
+# Phising detector 
+uses this to filter out phising emails, made for a friend who almost got hacked from phising
+
