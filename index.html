@@ -12,24 +12,24 @@
   <div class="ph-header">
     <i class="ti ti-shield-check"></i>
     <span class="ph-title">Phishing Detector</span>
-    <span class="ph-badge">AI-powered</span>
   </div>
 
   <p class="intro">Paste email details below. The AI will analyze for phishing signals, social engineering, spoofed domains, urgency tactics, and more.</p>
 
-  <div class="field-label">Load an example</div>
+  <!--<div class="field-label">Load an example</div>
   <div class="examples-row">
     <button class="example-chip" onclick="loadExample('phishing')">⚠️ Phishing sample</button>
     <button class="example-chip" onclick="loadExample('legit')">✅ Legit sample</button>
     <button class="example-chip" onclick="loadExample('suspicious')">🔶 Suspicious sample</button>
   </div>
+-->
 
   <div class="ph-row">
     <div class="ph-field">
       <div class="field-label">Sender address</div>
       <input id="sender" type="text" placeholder="e.g. support@paypa1.com" />
     </div>
-    <div class="ph-field">
+   <div class="ph-field">
       <div class="field-label">Subject line</div>
       <input id="subject" type="text" placeholder="e.g. URGENT: Verify your account" />
     </div>
@@ -40,10 +40,12 @@
     <textarea id="body" class="body-field" placeholder="Paste the full email body here..."></textarea>
   </div>
 
+
   <div class="ph-field">
     <div class="field-label">Links found in email (optional, one per line)</div>
     <textarea id="links" class="links-field" placeholder="https://paypa1-secure.com/login&#10;https://bit.ly/3xK9pQ"></textarea>
   </div>
+
 
   <button class="analyze-btn" id="analyzeBtn" onclick="analyze()">
     <i class="ti ti-radar"></i>
