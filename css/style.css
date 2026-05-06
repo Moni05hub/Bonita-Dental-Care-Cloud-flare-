@@ -1,0 +1,257 @@
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f5f3;
+      color: #1a1a1a;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+ 
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      border: 0.5px solid #e0ddd5;
+      padding: 2rem;
+    }
+ 
+    .ph-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1.5rem;
+    }
+ 
+    .ph-header i { font-size: 24px; color: #a32d2d; }
+ 
+    .ph-title { font-size: 20px; font-weight: 600; }
+ 
+    .ph-badge {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: #fcebeb;
+      color: #a32d2d;
+    }
+ 
+    .intro {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 1.25rem;
+      line-height: 1.6;
+    }
+ 
+    .field-label {
+      font-size: 11px;
+      color: #888;
+      margin-bottom: 6px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+ 
+    .ph-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+ 
+    .ph-field { margin-bottom: 12px; }
+ 
+    input, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 0.5px solid #ccc;
+      border-radius: 8px;
+      background: #fafafa;
+      color: #1a1a1a;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      resize: vertical;
+      outline: none;
+    }
+ 
+    input:focus, textarea:focus { border-color: #888; background: #fff; }
+ 
+    textarea.body-field { min-height: 160px; }
+    textarea.links-field { min-height: 60px; }
+ 
+    .examples-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+ 
+    .example-chip {
+      font-size: 12px;
+      padding: 4px 10px;
+      border: 0.5px solid #ccc;
+      border-radius: 100px;
+      background: #fafafa;
+      color: #555;
+      cursor: pointer;
+      font-family: inherit;
+    }
+ 
+    .example-chip:hover { background: #fff; color: #1a1a1a; }
+ 
+    .analyze-btn {
+      width: 100%;
+      padding: 11px;
+      border: 0.5px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      color: #1a1a1a;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 8px;
+      font-family: inherit;
+    }
+ 
+    .analyze-btn:hover { background: #f5f5f3; }
+    .analyze-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+ 
+    .result-card {
+      margin-top: 1.5rem;
+      border: 0.5px solid #e0ddd5;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+ 
+    .risk-banner {
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+ 
+    .risk-banner i { font-size: 22px; }
+ 
+    .risk-safe, .risk-low { background: #eaf3de; }
+    .risk-medium { background: #faeeda; }
+    .risk-high, .risk-critical { background: #fcebeb; }
+ 
+    .risk-label { font-size: 16px; font-weight: 500; }
+    .risk-sublabel { font-size: 13px; }
+ 
+    .risk-safe .risk-label, .risk-low .risk-label,
+    .risk-safe .risk-sublabel, .risk-low .risk-sublabel { color: #3b6d11; }
+    .risk-safe i, .risk-low i { color: #3b6d11; }
+ 
+    .risk-medium .risk-label, .risk-medium .risk-sublabel { color: #854f0b; }
+    .risk-medium i { color: #854f0b; }
+ 
+    .risk-high .risk-label, .risk-critical .risk-label,
+    .risk-high .risk-sublabel, .risk-critical .risk-sublabel { color: #a32d2d; }
+    .risk-high i, .risk-critical i { color: #a32d2d; }
+ 
+    .score-bar-wrap {
+      padding: 14px 18px;
+      border-bottom: 0.5px solid #e0ddd5;
+      background: #fff;
+    }
+ 
+    .score-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+ 
+    .score-num { font-size: 22px; font-weight: 500; }
+    .score-denom { font-size: 14px; color: #888; }
+    .score-tag { font-size: 12px; color: #888; }
+ 
+    .score-bar-bg {
+      height: 8px;
+      background: #f0ede8;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+ 
+    .score-bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.6s ease;
+    }
+ 
+    .divider { border: none; border-top: 0.5px solid #e0ddd5; }
+ 
+    .analysis-body { padding: 16px 18px; background: #fff; }
+ 
+    .section-title {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 10px;
+      margin-top: 16px;
+    }
+ 
+    .section-title:first-child { margin-top: 0; }
+ 
+    .flag-list { display: flex; flex-direction: column; gap: 6px; }
+ 
+    .flag-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 13px;
+      color: #1a1a1a;
+      line-height: 1.5;
+    }
+ 
+    .flag-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+ 
+    .dot-danger { background: #a32d2d; }
+    .dot-warning { background: #854f0b; }
+    .dot-success { background: #3b6d11; }
+ 
+    .summary-text { font-size: 13px; color: #555; line-height: 1.7; margin-bottom: 12px; }
+ 
+    .rec-box {
+      background: #f5f5f3;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 13px;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+ 
+    .spinner {
+      width: 16px;
+      height: 16px;
+      border: 2px solid #ccc;
+      border-top-color: #1a1a1a;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+ 
+    @keyframes spin { to { transform: rotate(360deg); } }
+ 
+    .error-box {
+      margin-top: 1rem;
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: #fcebeb;
+      color: #a32d2d;
+      font-size: 13px;
+    }
+ 
+    @media (max-width: 500px) {
+      .ph-row { grid-template-columns: 1fr; }
+    }
